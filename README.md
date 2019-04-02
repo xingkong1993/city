@@ -17,11 +17,7 @@ new verCity({});
 4. citys：城市数据。
 
 ###### 四、实例图片
-![文件上传](https://github.com/xingkong1993/image_relesess/blob/master/upload.png)
-![文件上传](https://github.com/xingkong1993/image_relesess/blob/master/upload5.png)
-![文件上传](https://github.com/xingkong1993/image_relesess/blob/master/upload6.png)
-![文件上传](https://github.com/xingkong1993/image_relesess/blob/master/upload3.png)
-![文件上传](https://github.com/xingkong1993/image_relesess/blob/master/upload4.png)
+![文件上传](https://github.com/xingkong1993/image_relesess/blob/master/city.png)
 
 ###### 版权信息
 > Copyright © 2019 by [搬砖的小白](https://www.xincheng-blog.cn)  
