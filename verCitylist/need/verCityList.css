@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+[data-city-list] {
+    cursor: pointer;
+}
+
+.ver-city-list-box {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background: #fff;
+    overflow: auto;
+    opacity: 0;
+    top: -100vh;
+}
+
+.ver-city-list-box .ver-city-list-title {
+    border-bottom: 1px solid #dedede;
+    line-height: 45px;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+}
+
+.ver-city-list-box ul, .ver-city-list-box li, .ver-city-list-box ol {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.ver-city-list-box .ver-city-list-tag{
+    color: red;
+    width: 30px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    padding: 15px;
+    height: 80vh;
+    overflow: hidden;
+    top: 50%;
+    margin-top: -40vh;
+}
+
+.ver-city-list-box .ver-city-list-tag li{
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+}
+.ver-city-list-items{
+    padding-top: 50px !important;
+}
+.ver-city-list-items dl{
+    margin: 0;
+    padding: 0;
+}
+.ver-city-list-items dt{
+    line-height: 35px;
+    border-bottom: 1px solid #dedede;
+    padding-left: 15px;
+}
+
+.ver-city-list-items .ver-city-list-items-hot dt{
+    color: red;
+}
+
+.ver-city-list-items dd{
+    border-bottom: 1px solid #dedede;
+    margin: 0;
+    padding: 0 15px;
+    line-height: 35px;
+}
+.ver-city-list-name{
+    cursor: pointer;
+}
+
+.ver-city-list-name:hover{
+    color: red;
+}
+.ver-city-list-items-hot .ver-city-list-name{
+    display: inline-block;
+}
+
+.ver-city-list-items-hot .ver-city-list-name+.ver-city-list-name{
+    margin-left: 5px;
+}
+
+#ver-city-close{
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+}
+
+.ver-city-box-show{
+    opacity: 1;
+    top: 0;
+    animation: show-box 0.5s ease;
+}
+
+@keyframes show-box {
+    from{
+        opacity: 0;
+        top: -100vh;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.ver-city-box-hide{
+    opacity: 0;
+    top: -100vh;
+    animation: hide-box 0.5s ease;
+}
+
+@keyframes hide-box {
+    from{
+        opacity: 1;
+        top: 0;
+    }
+    to{
+        opacity: 0;
+        top: -100vh;
+    }
+}

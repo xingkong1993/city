@@ -1,0 +1,33 @@
+@font-face {font-family: "verCityList";
+  src: url('iconfont.eot?t=1553849541580'); /* IE9 */
+  src: url('iconfont.eot?t=1553849541580#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPcAAsAAAAAB/QAAAONAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDMIJ9ATYCJAMQCwoABCAFhG0HRxvuBsgeg207eRxDkjRBtx/j4+G/tdf7Zmd/JoQKFIPl46OiopBaYcq2wrXCkJA1tkKxEft/bdqnpCJOVYXAkDg8Ml1Vu4lIxU8rJsnvvnhwzHRpE8gDmkt24ADHrQOKiK8i+wfEP5bXNbwUNIjXCXQYF4o4yC+tBSMZmReIO4WMBqOMQm5ID0VoVWzNFsQytZLmpzsAPuq/j/8QHUYgqSsgSw8v8ljI/CV5xpDTmleOJQJzOh3cXVRYADJxVWk4QUaBBaQOb7TEFlAUian6PJ8x/xvMOoqgUIGh/3iJaAFJ7QIbEKz4JeGMROgJMgFCBlIk+CDK4omSXgPfgeBG8QNOWg4xM7apO3DCtWFjcP2BHSfPBzTsTVbdXnjTuW69X93us8e3BdbuQ19z7M4V//o9vrW7TM7cr3GoX7N27Wr7rJaDfURvb313d+20rLrVq1aVfvGRXqKvr6Gnp25ad2jjquZrvd47+wqu9nht664/9WDaw4WPpz8au3D/NLvautXT9i0Y5bHTHRvWPmgXakt9u5O9t6zJ7Qk49XjQY9c1+tKAear5gMq+tmrI4/GpgJ7cmuHeyb7dpbXEzC9X2IkT+aNUzgDRf6wxpjahvP9TvsPlglK7XF+CnTsbEZQqjyXYoold5wsyfn4uwOekTuXBemO2bh6rB1SgRktCnCpmdEubzCcuKy01NuaiZTqQ9ETIraQ5MPWTmbfT/JdEOt/JWNf9b+ZnqOJR6zwBjaacTE6jmXQlbQBInynrF07zoSrRuMMy9auR6SO4f17+e1VXDWP+B2Zn5g+T5fgGBI7PJv6cAczQrO4lsh0kd87roBYabBkwOoVo2PMRSobpQtJmDCrFBDJjF6DWaQNaim3oMK9gd6dBIlJkY2DObAShz1FIevyASp+7yIwdgdqIt9DSFyR0OArbIztNhcIkR0Q0RiwlHU8pGF7LMTU2MenVSNalpsU0W+PrkahTuKmo8Mh8uABpkTjFCt0YWTTGHMWJvIbKR7chtZqnBJFXIgaHyzEWkiMiuKofCmd4DZjYJ0JoGMKiSI1HUWDwtDjZHDMp/H41RKaLGk1sqOtR1kNEOorBKVHCRXZAFgi0nepu5S06Y8hEwzAOhSPiaVDykQ5R0wCPIlRPUkIYWDj5AJ8gWQRuxHUVhC8v0rzhFuhATsyhR5CEhNCH+iWmRWyk5hkaP0S0Ca2VqVEYs3MYAAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1553849541580') format('woff'),
+  url('iconfont.ttf?t=1553849541580') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1553849541580#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.city-icon {
+  font-family: "verCityList" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.city-icon-start:before {
+  content: "\e61f";
+}
+
+.city-icon-location:before {
+  content: "\e663";
+}
+
+.city-icon-angle-left:before {
+  content: "\e604";
+}
+
+.city-icon-lg{
+  font-size: 1.5em;
+}
+
