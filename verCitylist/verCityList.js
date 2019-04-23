@@ -13,7 +13,7 @@ window.verCity = (function () {
             citiesLists = param.citys;
         }
         //获取定位点
-        get_linkItems();
+        setTimeout(get_linkItems,10);
         link.onclick = show_citys;
     };
     var get_linkItems = function () {
@@ -58,7 +58,8 @@ window.verCity = (function () {
         var location = document.createElement("li");
         location.innerHTML = '<dl>\n' +
             '                <dt>\n' +
-            '                    <i class="city-icon city-icon-location" id="now-city"> 当前城市：' + defa + '</i>\n' +
+            '                    <i class="city-icon city-icon-location" id="now-city">' + defa + '</i>\n' +
+            // '                    <span class="ver-citylist-search-box"><input type="text" autocomplete="off" id="ver-city-search" placeholder="搜索城市"><i class="city-icon city-icon-search" id="search-city"></i></span>\n' +
             '                </dt>\n' +
             '            </dl>';
         items.appendChild(location);
@@ -94,7 +95,8 @@ window.verCity = (function () {
         document.body.appendChild(box);
         close.onclick = function () {
             var ids = document.getElementById("ver-city-list-box");
-            ids.scrollTo(0, 0);
+            ids.scrollTop = 0;
+            ids.scrollLeft = 0;
             ids.classList.remove("ver-city-box-show");
             ids.classList.add("ver-city-box-hide");
         };
@@ -109,8 +111,7 @@ window.verCity = (function () {
                 var data = this.getAttribute("data-items");
                 var docu = ids.querySelector("#" + data);
                 var tops = docu.offsetTop;
-                var hei = ids.offsetTop;
-                ids.scrollTo(tops, tops - 40);
+                ids.scrollTop = tops-40;
             }
         });
         var citys = document.querySelectorAll(".ver-city-list-name");
@@ -119,7 +120,8 @@ window.verCity = (function () {
                 var text = this.innerText;
                 link.setAttribute("data-city-default", text);
                 link.querySelector(".city-changes").innerText = text;
-                ids.scrollTo(0, 0);
+                ids.scrollLeft = 0;
+                ids.scrollTop = 0;
                 document.getElementById("now-city").innerText = "当前城市：" + text;
                 ids.classList.remove("ver-city-box-show");
                 ids.classList.add("ver-city-box-hide");
@@ -304,10 +306,6 @@ window.verCity = (function () {
             "name": "澄迈县",
             "initials": "C",
             "code": "469023"
-        }, {"name": "池州市", "initials": "C", "code": "341700"}, {
-            "name": "重庆郊县",
-            "initials": "C",
-            "code": "500200"
         }, {"name": "长春市", "initials": "C", "code": "220100"}, {
             "name": "楚雄彝族自治州",
             "initials": "C",
